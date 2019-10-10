@@ -1,3 +1,4 @@
+#include <windows.h>
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -40,11 +41,9 @@ void exitProgram();
 
 int main()
 {
-	
+	HANDLE hConsoleColor = GetStdHandle(STD_OUTPUT_HANDLE);
 	int select; //Bien de chon chuc nang
 	bool reload =  true; // Bien lap lai menu
-	
-	system("color 3");  //Doi mau chu 
 	
 	cout << "Nhap so phan tu cua mang: ";
 	int n, x, res; cin >> n;
@@ -57,8 +56,10 @@ int main()
 		
 		/* In giao dien nguoi dung */
 		system("cls");
-		cout << "\t\t   Duong Le Phuoc Trung - 1824801030053 - D18PM01" << endl;
-		cout << "\t\t\tCHUONG TRINH TIM KIEM, SAP XEP MANG" << endl;
+		SetConsoleTextAttribute(hConsoleColor, 10);
+		cout << "\tDuong Le Phuoc Trung - 1824801030053 - D18PM01" << endl << endl;
+		SetConsoleTextAttribute(hConsoleColor, 15);
+		cout << "\t     CHUONG TRINH TIM KIEM, SAP XEP MANG" << endl;
 		cout << "------------------------------------"
 			 << "------------------------------------" << endl;
 		cout << "Mang la nhap la: ";
