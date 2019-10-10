@@ -57,6 +57,7 @@ int main()
 		
 		/* In giao dien nguoi dung */
 		system("cls");
+		cout << "\t\t   Duong Le Phuoc Trung - 1824801030053 - D18PM01" << endl;
 		cout << "\t\t\tCHUONG TRINH TIM KIEM, SAP XEP MANG" << endl;
 		cout << "------------------------------------"
 			 << "------------------------------------" << endl;
@@ -240,8 +241,8 @@ void selectionSort(int arr[], int n)
     {
         minIndex = i;
         for (j = i+1; j < n; j++)
-        if (arr[j] < arr[minIndex]) 
-            minIndex = j;
+        	if (arr[j] < arr[minIndex])
+            	minIndex = j;
         swap(arr[minIndex], arr[i]);
     }  
 }
@@ -392,6 +393,8 @@ void printArray(int arr[], int n)
 void exitProgram()
 {
 	cout << "Cam on ban da su dung chuong trinh, xin chao tam biet va hen gap lai, an phim bat ky de thoat !" << endl;
-	system("pause");
 	exit(0);
 }
+/*
+*	Code by "Duong Le Phuoc Trung". All rights reserved
+*/
